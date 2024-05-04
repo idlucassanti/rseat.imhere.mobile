@@ -4,7 +4,12 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello World!</Text>
+      <Text style={styles.title}>
+        Nome do Evento
+      </Text>
+      <Text style={styles.subtitle}>
+        Sexta-feira, 03 de Maio de 2024
+      </Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +18,19 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#131016',
+    // alignItems: 'center',
+    // justifyContent: 'center',
+    padding: 24,
   },
+  title: {
+    color: '#FDFCFE',
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginTop: 48,
+  },
+  subtitle: {
+    color: '#6B6B6B',
+    fontSize: 16,
+  }
 });
